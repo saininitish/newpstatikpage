@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigFloww Internship Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ </head>
+ <body>
+    <!-- Existing Content -->
+  <header class="navbar">
+    <div class="logo">GigFloww</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <div class="dropdown">
+        <button class="dropbtn">Gigs ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <a href="#">Marketing</a>
+        </div>
+      </div>
+    </nav>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </header>
+  <!-- Hero Section -->
+  <section class="section hero">
+    <h1>Your Creative Gig Journey Starts Here</h1>
+    <p>Join a platform that empowers your talent and connects you with the right opportunities.</p>
+    <button class="btn primary">Join Now</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About GigFloww</h2>
+    <p style="font-size: 1.1rem; max-width: 700px; margin: 1rem auto; text-align: center;">
+      GigFloww is a powerful freelancing platform tailored for modern gig workers. Whether you're a designer, developer, or content creator, GigFloww helps you build your portfolio, find meaningful work, and grow your freelance career with ease.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1rem;">Platform Highlights</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Discover Gigs Easily</h3>
+        <p>Browse a curated list of gigs that match your skills and preferences.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Showcase Your Talent</h3>
+        <p>Create a beautiful profile and portfolio to attract potential clients.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Payments</h3>
+        <p>Get paid on time through our trusted payment gateway integrations.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Build Your Reputation</h3>
+        <p>Gain reviews and ratings from clients to level up your credibility.</p>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="slider">
+      <div class="slide active">"Amazing platform for gigs!" - Alex</div>
+      <div class="slide">"Helped me grow my freelance business." - Priya</div>
+      <div class="slide">"User-friendly and effective!" - Sam</div>
+    </div>
+    <div class="slider-nav">
+      <span onclick="showSlide(0)"></span>
+      <span onclick="showSlide(1)"></span>
+      <span onclick="showSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="signup">
+    <h2>Join as a Gig Worker</h2>
+    <form id="signup-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="skill" placeholder="Skill Category" required />
+      <input type="url" id="portfolio" placeholder="Portfolio Link" required />
+      <button type="submit" class="btn primary">Sign Up</button>
+    </form>
+    <div id="thank-you" class="hidden">Thank you for signing up!</div>
+  </section>
+
+  <!-- Button Library -->
+  <section class="button-library">
+    <h2>Button Components</h2>
+    <button class="btn primary">Primary Button</button>
+    <button class="btn secondary">Secondary Button</button>
+    <button class="btn disabled" disabled>Disabled Button</button>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 GigFloww. All rights reserved.
+  </div>
+    <script src="script.js"></script>
+ </body>
+ </html>
